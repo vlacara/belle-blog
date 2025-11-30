@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobelle Flores Blog • The Evolution of New Media</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    :root{
+      --bg:#0a0a14;
+      --card:rgba(30,30,50,0.45);
+      --gold:#f4d03f;
+      --cream:#fdf4e3;
+      --fb:#1877f2;--yt:#ff0000;--twitter:#1da1f2;--iphone:#a2aaad;--tiktok:#ff0050;--ai:#10a37f;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--cream);line-height:1.8;overflow-x:hidden;}
+    
+    /* Relaxing golden bubbles */
+    #bubbles{position:fixed;inset:0;pointer-events:none;z-index:-1;}
+    .bubble{
+      position:absolute;background:radial-gradient(circle,rgba(244,208,63,0.18),transparent 70%);
+      border-radius:50%;opacity:0.7;animation:float 20s infinite linear;
+    }
+    @keyframes float{0%{transform:translateY(100vh) scale(0.4);opacity:0}15%{opacity:0.7}85%{opacity:0.7}100%{transform:translateY(-120px) scale(1);opacity:0}}
+
+    /* Blog Header */
+    header{
+      background:linear-gradient(135deg,rgba(244,208,63,0.12),rgba(10,10,20,0.95));
+      padding:120px 40px 80px;text-align:center;
+    }
+    .blog-name{
+      font-family:'Playfair Display',serif;font-size:6rem;color:var(--gold);
+      text-shadow:0 0 70px rgba(244,208,63,0.4);margin-bottom:10px;
+    }
+    .blog-subtitle{font-size:2.FontAwesome 2.4rem;color:var(--cream);margin-bottom:40px;}
+    .author-info{
+      display:flex;flex-direction:column;align-items:center;gap:15px;
+    }
+    .author-avatar{
+      width:140px;height:140px;border-radius:50%;border:5px solid var(--gold);background:#333;
+    }
+    .author-title{font-size:2.8rem;color:var(--gold);font-weight:700;}
+    .grade{font-size:2rem;color:var(--cream);}
+
+    /* Main Content */
+    .container{
+      max-width:1000px;margin:0 auto;padding:80px 40px;
+    }
+    .post{
+      background:var(--card);backdrop-filter:blur(22px);border-radius:35px;padding:80px;
+      border:1px solid rgba(244,208,63,0.2);box-shadow:0 30px 80px rgba(0,0,0,0.7);
+    }
+    .post h1{
+      font-family:'Playfair Display',serif;font-size:5rem;color:var(--gold);margin:40px 0 30px;text-align:center;
+    }
+    .post h2{
+      font-family:'Playfair Display',serif;font-size:3.2rem;color:var(--gold);margin:70px 0 25px;
+    }
+    .post p{
+      font-size:2rem;margin:28px 0;color:var(--cream);text-align:justify;
+    }
+    .highlight{
+      background:rgba(244,208,63,0.12);padding:35px;border-left:6px solid var(--gold);
+      border-radius:12px;margin:50px 0;font-size:2rem;font-style:italic;color:var(--cream);
+    }
+    .icon-brand{font-size:3.8rem;vertical-align:middle;margin:0 12px;}
+
+    footer{
+      text-align:center;padding:140px 20px;font-size:1.8rem;color:#999;
+      background:linear-gradient(to top,var(--bg),transparent);
+    }
+
+    @keyframes fadeIn{to{opacity:1;transform:translateY(0);}}
+  </style>
+</head>
+<body>
+
+<div id="bubbles"></div>
+
+<header>
+  <div class="blog-name">Jobelle Flores Blog</div>
+  <div class="blog-subtitle">Thoughts on Digital Life, Media Literacy & Technology</div>
+  <div class="author-info">
+    <img src="https://via.placeholder.com/140/333/fff?text=JF" alt="Jobelle Flores" class="author-avatar">
+    <div class="author-title">JOBELLE FLORES</div>
+    <div class="grade">Grade 12 • Media & Information Literacy</div>
+  </div>
+</header>
+
+<div class="container">
+  <article class="post">
+    <h1>The Evolution of New Media:<br>A Journey from ARPANET to AI</h1>
+    <p style="text-align:center;font-size:1.8rem;color:#ccc;margin-bottom:60px;">
+      Published November 30, 2025 • 10 minute read
+    </p>
+
+    <h2>What is New Media?</h2>
+    <p>
+      New media is interactive, digital, and user-generated content that spreads instantly across networks. Unlike old media (TV, radio, newspapers), anyone can now create, share, and remix information — turning every smartphone into a broadcasting station.
+    </p>
+
+    <h2>The Timeline That Changed Everything</h2>
+    <p><strong>1969 — ARPANET</strong> <i class="fas fa-network-wired icon-brand" style="color:#4c9bef;"></i><br>
+    First internet message crashed after typing “LO”. Only 4 computers were connected!</p>
+
+    <p><strong>1991 — World Wide Web</strong> <i class="fas fa-globe icon-brand" style="color:#0066ff;"></i><br>
+    Tim Berners-Lee gave it away for free. First website still works: info.cern.ch</p>
+
+    <p><strong>2004–2006 — Web 2.0 Revolution</strong><br>
+    <i class="fab fa-facebook icon-brand" style="color:var(--fb);"></i>
+    <i class="fab fa-youtube icon-brand" style="color:var(--yt);"></i>
+    <i class="fab fa-twitter icon-brand" style="color:var(--twitter);"></i><br>
+    Ordinary people became creators. YouTube’s first video = 19 seconds.</p>
+
+    <p><strong>2007 — iPhone</strong> <i class="fas fa-mobile-alt icon-brand" style="color:var(--iphone);"></i><br>
+    Internet in your pocket 24/7. Today: more smartphones than toothbrushes!</p>
+
+    <p><strong>2016–2020 — Short Video Era</strong> <i class="fab fa-tiktok icon-brand" style="color:var(--tiktok);"></i><br>
+    TikTok made 15-second videos rule the world. Attention span dropped to 8 seconds.</p>
+
+    <p><strong>2022+ — Artificial Intelligence</strong> <i class="fas fa-robot icon-brand" style="color:var(--ai);"></i><br>
+    ChatGPT, deepfakes, AI art. By 2026, 90% of online content might be made by machines.</p>
+
+    <div class="highlight">
+      <strong>Shocking Truth:</strong> Fake news spreads <strong>6× faster</strong> than real news on social media (MIT, 2018).
+    </div>
+
+    <h2>Why Media & Information Literacy is Now a Superpower</h2>
+    <p>
+      In 2025, we’re surrounded by deepfakes, filter bubbles, and algorithm-driven feeds. Being able to spot fake videos, verify sources, and protect privacy isn’t just “nice to have” — it’s survival.
+    </p>
+
+    <h2>Personal Reflection — Jobelle Flores, Grade 12</h2>
+    <p>
+      I grew up scrolling TikTok and learning from YouTube. But I’ve also watched fake news hurt real people in my community.
+    </p>
+    <p>
+      This project taught me that every share has power. Media & information literacy isn’t just a subject — it’s how we stay human in a world run by algorithms and AI.
+    </p>
+    <p style="text-align:center;font-size:3.2rem;color:var(--gold);margin:80px 0;font-family:'Playfair Display',serif;">
+      Critical thinking is the new superpower.
+    </p>
+
+    <p style="text-align:center;font-size:4rem;margin-top:100px;color:var(--gold);font-family:'Playfair Display',serif;">
+      Thank you for reading ♡
+    </p>
+  </article>
+</div>
+
+<footer>
+  <p>© 2025 Jobelle Flores Blog • Grade 12 • Media & Information Literacy Project<br>
+     References: UNESCO, MIT 2018, Henry Jenkins, Statista</p>
+</footer>
+
+<script>
+  // Calm golden bubbles
+  function createBubble(){
+    const b=document.createElement('div');b.classList.add('bubble');
+    b.style.width=b.style.height=Math.random()*180+100+'px';
+    b.style.left=Math.random()*100+'%';
+    b.style.animationDuration=Math.random()*20+20+'s';
+    document.getElementById('bubbles').appendChild(b);
+    setTimeout(()=>b.remove(),40000);
+  }
+  setInterval(createBubble,2800);
+  for(let i=0;i<12;i++)createBubble();
+</script>
+
+</body>
+</html>
